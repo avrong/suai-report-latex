@@ -1,0 +1,7 @@
+**/.DS_Store
+
+# xelatex build artifacts
+_minted-report/
+*.aux
+*.log
+*.toc

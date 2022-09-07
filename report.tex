@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+
+\usepackage{import} % TeX import
+
+\usepackage{hhline} % Better horizontal lines in tables
+\usepackage{amsmath} % AMS Math collection
+\usepackage[english, russian]{babel} % Language support
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+\setsansfont[Ligatures=TeX]{Arial}
+\setmonofont{Fira Code}
+
+% Images
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% Code
+\usepackage{minted}
+\setminted{fontsize=\small}
+
+% Page dimentions
+\usepackage[
+    paperheight=29.7cm, paperwidth=21.0cm,
+    left=3cm, right=1cm, top=2cm, bottom=2cm, headheight=1.25cm
+]{geometry}
+\setlength{\parindent}{0cm} % First line margin
+
+\setcounter{secnumdepth}{0} % Disable section numbers
+
+\begin{document}
+
+\import{}{title}
+\import{}{body}
+
+\end{document}
