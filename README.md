@@ -9,8 +9,9 @@ The default fonts for document are `Times New Roman`, `Arial` and `Fira Code`. T
 Make is recommended, however you can run commands from `Makefile` manually.
 
 ```bash
-make       # Build PDF using xelatex
-make watch # Run build on source file changes
+make          # Build PDF into report.pdf using xelatex
+make watch    # Run build on source file changes (requires fswatch)
+make optimize # Optimize report.pdf into report-opt.pdf (requires ghostscript)
 ```
 
 ## Editing
