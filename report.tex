@@ -1,12 +1,23 @@
 %%% SUAI/GUAP LaTeX Report Template % https://github.com/avrong/suai-report-latex %%%%
 
-\documentclass[12pt]{article}
+\documentclass[12pt]{extarticle}
 
 \usepackage{import} % TeX import
 
 \usepackage{hhline} % Better horizontal lines in tables
 \usepackage{amsmath} % AMS Math collection
 \usepackage[english, russian]{babel} % Language support
+
+% Prevent hyphenation
+\emergencystretch 3em
+\usepackage[none]{hyphenat}
+
+\usepackage{extsizes} % Additional font sizes for docs (8-20px)
+
+\usepackage{float} % Ability to have figures inside text
+\floatplacement{figure}{H} % Make figures inside text as default
+
+\usepackage{setspace} % Ability to set custom line height
 
 % Fonts
 \usepackage{fontspec}

@@ -14,6 +14,8 @@
 
 %%% Title page
 
+\begin{spacing}{1} % Set custom line height for title page
+
 \pagenumbering{gobble} % Remove number from title page
 
 \setlength{\parindent}{0cm} % First line margin
@@ -119,3 +121,5 @@
 
 \setlength{\parindent}{1.25cm} % Restore first line margin
 \pagenumbering{arabic} % Restore page numbering
+
+\end{spacing} % Return default line height
